@@ -1,7 +1,8 @@
 # rag-N-box
 
-La Rag'n box :
-C'est une cage à Ragondins avec un capteur logique et une camera. Lorqu'un animal quelconque est détecté, la camera prend une photo, celle-ci est analysée par une I.A. qui indique le taux de probabilité que l'animal pris en photo soit un ragondin. Un message est ensuite envoyé contenant le taux de probabilité ainsi que l'image prise par la camera. Le but de tout ceci est d'aider les trapeurs car ils ne seront pas obligés d'aller verifier leurs cages tous les jours.
-
+La Rag'n box est une cage à Ragondins equipée d'une caméra et d'un capteur de fermeture. 
+Lorqu'un animal est capturé, la caméra prend une photo qui est ensuite analysée par une IA.
+Un message accompagné d'une image est ensuite envoyé au piégeur qui lui indique une prise et si celle-ci est un ragondin.
+L'objectif de ce système est de faciliter la capture d'espèces invasives tout en évitant aux piégeurs de devoir vérifier l'entièreté de leurs cages tous les jours.
 
 
