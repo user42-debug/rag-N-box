@@ -20,4 +20,5 @@ def is_ragondin(path):
 
     return pred == 0
 
-print(is_ragondin("data/chat_ex.jpg"))
+
+print(is_ragondin("data/ragondin_ex.jpg"))
