@@ -1,2 +1,4 @@
 data/classes.pt
 .venv/
+models/*.FCStd
+models/*.FCBak

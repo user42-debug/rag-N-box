@@ -1,0 +1,446 @@
+--- Startup times for process: Primary (or UI client) ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.001  000.001: --- NVIM STARTING ---
+000.347  000.345: event init
+000.559  000.212: early init
+000.687  000.128: locale set
+000.786  000.100: init first window
+001.975  001.189: inits 1
+001.997  000.021: window checked
+002.004  000.007: parsing arguments
+003.784  000.156  000.156: require('vim.shared')
+004.191  000.141  000.141: require('vim.inspect')
+004.371  000.144  000.144: require('vim._options')
+004.380  000.582  000.297: require('vim._editor')
+004.384  000.822  000.084: require('vim._init_packages')
+004.391  001.565: init lua interpreter
+008.794  004.403: nvim_ui_attach
+010.119  001.325: nvim_set_client_info
+010.130  000.011: --- NVIM STARTED ---
+
+--- Startup times for process: Embedded ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.001  000.001: --- NVIM STARTING ---
+000.319  000.318: event init
+000.544  000.224: early init
+000.681  000.137: locale set
+000.806  000.125: init first window
+001.912  001.106: inits 1
+001.941  000.029: window checked
+001.948  000.007: parsing arguments
+003.740  000.161  000.161: require('vim.shared')
+004.055  000.134  000.134: require('vim.inspect')
+004.226  000.139  000.139: require('vim._options')
+004.233  000.482  000.209: require('vim._editor')
+004.238  000.744  000.102: require('vim._init_packages')
+004.244  001.552: init lua interpreter
+004.412  000.167: expanding arguments
+004.475  000.063: inits 2
+005.392  000.918: init highlight
+005.397  000.004: waiting for UI
+005.796  000.399: done waiting for UI
+005.832  000.037: clear screen
+006.266  000.053  000.053: require('vim.keymap')
+009.056  000.503  000.503: sourcing nvim_exec2()
+009.414  003.573  003.017: require('vim._defaults')
+009.423  000.017: init default mappings & autocommands
+010.590  000.130  000.130: sourcing /usr/share/nvim/runtime/ftplugin.vim
+010.798  000.100  000.100: sourcing /usr/share/nvim/runtime/indent.vim
+011.213  000.260  000.260: sourcing /usr/share/nvim/archlinux.lua
+011.231  000.332  000.072: sourcing /etc/xdg/nvim/sysinit.vim
+012.874  001.523  001.523: require('options')
+013.751  000.866  000.866: require('keymaps')
+015.606  001.418  001.418: require('lazy')
+015.903  000.221  000.221: require('ffi')
+016.063  000.076  000.076: require('vim.fs')
+016.444  000.367  000.367: require('vim.uri')
+016.498  000.581  000.138: require('vim.loader')
+016.906  000.351  000.351: require('lazy.stats')
+017.271  000.302  000.302: require('lazy.core.util')
+017.603  000.321  000.321: require('lazy.core.config')
+018.392  000.446  000.446: require('lazy.core.handler')
+019.538  000.352  000.352: require('lazy.pkg')
+019.561  000.799  000.447: require('lazy.core.meta')
+019.592  001.188  000.389: require('lazy.core.plugin')
+019.622  002.010  000.376: require('lazy.core.loader')
+021.334  000.269  000.269: require('lazy.core.fragments')
+024.438  000.629  000.629: require('lazy.core.handler.event')
+024.455  001.206  000.577: require('lazy.core.handler.ft')
+025.002  000.531  000.531: require('lazy.core.handler.keys')
+025.237  000.218  000.218: require('lazy.core.handler.cmd')
+026.111  000.351  000.351: sourcing nvim_exec2() called at /usr/share/nvim/runtime/filetype.lua:0
+026.127  000.652  000.302: sourcing /usr/share/nvim/runtime/filetype.lua
+026.138  000.741  000.089: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+026.441  000.012  000.012: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+026.484  000.004  000.004: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+028.890  000.176  000.176: require('mason-core.path')
+029.396  000.191  000.191: require('mason-core.functional.data')
+029.688  000.276  000.276: require('mason-core.functional.function')
+029.928  000.214  000.214: require('mason-core.functional.list')
+030.224  000.264  000.264: require('mason-core.functional.relation')
+030.435  000.195  000.195: require('mason-core.functional.logic')
+030.683  000.233  000.233: require('mason-core.functional.number')
+030.921  000.212  000.212: require('mason-core.functional.string')
+031.228  000.288  000.288: require('mason-core.functional.table')
+031.539  000.250  000.250: require('mason-core.functional.type')
+031.590  002.525  000.403: require('mason-core.functional')
+031.727  002.824  000.299: require('mason-core.platform')
+032.005  000.261  000.261: require('mason.settings')
+032.025  003.512  000.252: require('mason-core.installer.InstallLocation')
+032.812  000.481  000.481: require('mason-core.log')
+032.829  000.619  000.139: require('mason-core.EventEmitter')
+033.199  000.363  000.363: require('mason-registry.sources')
+033.222  001.192  000.209: require('mason-registry')
+033.235  006.299  001.595: require('mason')
+034.100  000.553  000.553: require('mason.api.command')
+034.291  000.015  000.015: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+034.335  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+035.158  000.013  000.013: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+035.198  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+036.944  000.697  000.697: require('vim.lsp.log')
+040.363  003.401  003.401: require('vim.lsp.protocol')
+041.000  000.619  000.619: require('vim.lsp.util')
+041.387  000.162  000.162: require('vim.lsp.sync')
+041.409  000.393  000.231: require('vim.lsp._changetracking')
+041.858  000.226  000.226: require('vim.lsp._transport')
+041.910  000.491  000.265: require('vim.lsp.rpc')
+042.022  006.467  000.865: require('vim.lsp')
+043.904  001.867  001.867: require('blink.cmp')
+044.261  000.151  000.151: require('blink.cmp.lib.async')
+044.519  000.106  000.106: require('blink.cmp.config.utils')
+044.637  000.108  000.108: require('blink.cmp.config.keymap')
+044.885  000.102  000.102: require('blink.cmp.config.completion.keyword')
+045.028  000.135  000.135: require('blink.cmp.config.completion.trigger')
+045.160  000.123  000.123: require('blink.cmp.config.completion.list')
+045.307  000.139  000.139: require('blink.cmp.config.completion.accept')
+045.541  000.225  000.225: require('blink.cmp.config.completion.menu')
+045.724  000.175  000.175: require('blink.cmp.config.completion.documentation')
+045.856  000.124  000.124: require('blink.cmp.config.completion.ghost_text')
+045.865  001.204  000.180: require('blink.cmp.config.completion')
+046.040  000.171  000.171: require('blink.cmp.config.fuzzy')
+046.229  000.180  000.180: require('blink.cmp.config.sources')
+046.393  000.155  000.155: require('blink.cmp.config.signature')
+046.566  000.166  000.166: require('blink.cmp.config.snippets')
+046.737  000.163  000.163: require('blink.cmp.config.appearance')
+046.872  000.127  000.127: require('blink.cmp.config.modes.cmdline')
+046.998  000.118  000.118: require('blink.cmp.config.modes.term')
+047.014  002.743  000.245: require('blink.cmp.config')
+047.183  000.163  000.163: require('blink.cmp.lib.utils')
+047.335  000.142  000.142: require('blink.cmp.lib.event_emitter')
+047.360  003.442  000.243: require('blink.cmp.sources.lib')
+047.587  012.228  000.452: sourcing /home/cassie/.local/share/nvim/lazy/blink.cmp/plugin/blink-cmp.lua
+047.606  012.318  000.090: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+047.641  000.012  000.012: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+047.706  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+048.135  000.151  000.151: require('blink-cmp')
+053.692  000.299  000.299: require('blink.cmp.config.modes.types')
+055.766  000.335  000.335: require('blink.cmp.fuzzy.download.system')
+055.865  000.704  000.369: require('blink.cmp.fuzzy.download.files')
+055.878  001.009  000.304: require('blink.cmp.fuzzy.download.git')
+055.893  001.408  000.399: require('blink.cmp.fuzzy.download')
+056.772  000.610  000.610: require('vim._system')
+064.111  000.359  000.359: sourcing /usr/share/nvim/runtime/plugin/editorconfig.lua
+064.140  000.512  000.153: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+064.932  000.693  000.693: sourcing /usr/share/nvim/runtime/plugin/gzip.vim
+064.949  000.770  000.078: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+065.407  000.327  000.327: sourcing /usr/share/nvim/runtime/plugin/man.lua
+065.424  000.407  000.079: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+070.179  000.700  000.700: sourcing /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+070.265  004.745  004.045: sourcing /usr/share/nvim/runtime/plugin/matchit.vim
+070.286  004.832  000.087: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+070.909  000.494  000.494: sourcing /usr/share/nvim/runtime/plugin/matchparen.vim
+070.925  000.571  000.077: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+073.151  000.919  000.919: sourcing /usr/share/nvim/runtime/pack/dist/opt/netrw/plugin/netrwPlugin.vim
+073.222  002.102  001.183: sourcing /usr/share/nvim/runtime/plugin/netrwPlugin.vim
+073.233  002.193  000.091: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+073.698  000.343  000.343: sourcing /usr/share/nvim/runtime/plugin/osc52.lua
+073.716  000.441  000.098: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+074.313  000.473  000.473: sourcing /usr/share/nvim/runtime/plugin/rplugin.vim
+074.330  000.589  000.116: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+074.755  000.221  000.221: sourcing /usr/share/nvim/runtime/plugin/shada.vim
+074.771  000.324  000.103: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+074.955  000.063  000.063: sourcing /usr/share/nvim/runtime/plugin/spellfile.vim
+074.968  000.172  000.109: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+075.374  000.300  000.300: sourcing /usr/share/nvim/runtime/plugin/tarPlugin.vim
+075.388  000.386  000.086: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+075.794  000.285  000.285: sourcing /usr/share/nvim/runtime/plugin/tohtml.lua
+075.811  000.396  000.111: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+075.988  000.071  000.071: sourcing /usr/share/nvim/runtime/plugin/tutor.vim
+076.002  000.163  000.092: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+076.858  000.710  000.710: sourcing /usr/share/nvim/runtime/plugin/zipPlugin.vim
+076.881  000.808  000.098: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+077.529  063.766  021.324: require('plugins')
+080.510  000.785  000.785: require('monokai')
+081.244  000.710  000.710: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+081.812  000.528  000.528: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.428  000.032  000.032: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.476  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.494  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.519  000.015  000.015: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.534  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.557  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.570  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.587  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.603  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.624  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.639  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.673  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.692  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.706  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.727  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.741  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.755  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.769  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.791  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.805  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.818  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.833  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.847  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.871  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.885  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.898  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.910  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.923  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+085.994  000.008  000.008: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.009  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.022  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.036  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.049  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.095  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.109  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.121  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.133  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.147  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.168  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.192  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.209  000.008  000.008: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.223  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.237  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.250  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.265  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.279  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.292  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.378  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.393  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.407  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.423  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.448  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.473  000.012  000.012: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.496  000.010  000.010: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.521  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.749  000.018  000.018: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.772  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.787  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.804  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.819  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.854  000.026  000.026: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.879  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.894  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.908  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.921  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.935  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.951  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.965  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.981  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+086.994  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.006  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.136  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.155  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.261  000.098  000.098: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.278  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.293  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.308  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.322  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.336  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.349  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.373  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.387  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.401  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.415  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.524  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.584  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.603  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.617  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.631  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.664  000.025  000.025: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.680  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.695  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.895  000.055  000.055: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.918  000.012  000.012: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+087.932  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.056  000.012  000.012: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.075  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.089  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.102  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.115  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.128  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.140  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.159  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.174  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.187  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.201  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.214  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.231  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.310  000.012  000.012: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.327  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.348  000.010  000.010: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.370  000.010  000.010: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.392  000.010  000.010: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.423  000.014  000.014: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.452  000.012  000.012: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.487  000.017  000.017: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.517  000.014  000.014: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.703  000.016  000.016: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.725  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.740  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.752  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.765  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.778  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.791  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.804  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.817  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.829  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.847  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.859  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.871  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.883  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.895  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.907  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+088.924  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.029  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.058  000.016  000.016: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.072  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.087  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.103  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.116  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.132  000.008  000.008: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.145  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.160  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.174  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.187  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.201  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.214  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.229  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.244  000.008  000.008: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.259  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.332  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.347  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.360  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.373  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.386  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.399  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.411  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.424  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.435  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.447  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.459  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.478  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.491  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.503  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.515  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.528  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.540  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.554  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.567  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.578  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.863  000.224  000.224: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.896  000.015  000.015: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.920  000.010  000.010: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.942  000.010  000.010: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.959  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.971  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.985  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+089.996  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.009  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.021  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.034  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.047  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.061  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.073  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.091  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.108  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.122  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.135  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.148  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.161  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.174  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.186  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.199  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.212  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.225  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.238  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.251  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.264  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.276  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.289  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.302  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.315  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.327  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.340  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.353  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.365  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.376  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.388  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.400  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.411  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.423  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.435  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.448  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.459  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.471  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.484  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.496  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.507  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.519  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.531  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.543  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.556  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.569  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.582  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.594  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.606  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.619  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.631  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.664  000.026  000.026: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.681  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.694  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.759  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.773  000.006  000.006: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.786  000.005  000.005: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.799  000.007  000.007: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.820  000.010  000.010: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.841  000.009  000.009: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.863  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.887  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.910  000.011  000.011: sourcing nvim_exec2() called at /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim:1
+090.925  011.288  007.166: sourcing /home/cassie/.local/share/nvim/lazy/monokai.nvim/colors/monokai_pro.vim
+090.952  013.098  001.810: sourcing nvim_exec2() called at /home/cassie/.config/nvim/init.lua:0
+090.969  013.425  000.327: require('colorscheme')
+091.628  000.648  000.648: require('lsp')
+091.640  080.336  000.109: sourcing /home/cassie/.config/nvim/init.lua
+091.695  001.374: sourcing vimrc file(s)
+092.030  000.136  000.136: sourcing /usr/share/nvim/runtime/filetype.lua
+092.621  000.226  000.226: sourcing /usr/share/nvim/runtime/syntax/synload.vim
+092.933  000.736  000.510: sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+092.984  000.416: inits 3
+097.177  004.193: reading ShaDa
+097.461  000.284: opening buffers
+097.548  000.086: BufEnter autocommands
+097.556  000.008: editing files in windows
+097.926  000.371: VimEnter autocommands
+098.278  000.204  000.204: require('vim.termcap')
+098.378  000.054  000.054: require('vim.text')
+098.448  000.263: UIEnter autocommands
+099.932  001.294  001.294: sourcing /usr/share/nvim/runtime/autoload/provider/clipboard.vim
+099.955  000.214: before starting main loop
+100.876  000.920: first screen update
+100.885  000.009: --- NVIM STARTED ---
+
