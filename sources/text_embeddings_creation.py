@@ -8,12 +8,12 @@ model, preprocess = clip.load("ViT-B/32", device=device)
 text = [
     "A nutria",
     "An animal",
+    "An empty cage",
     "A cat",
     "A rabbit",
     "A dog",
     "A mouse",
     "A rat",
-    
 ]
 
 tokens = clip.tokenize(text).to(device)
