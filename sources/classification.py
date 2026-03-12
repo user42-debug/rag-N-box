@@ -2,23 +2,27 @@ import clip
 import torch
 from PIL import Image
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model, preprocess = clip.load("ViT-B/32", device=device)
+class Classifier:
+    def __init__(self, prompts):
 
-text_embeddings = torch.load("data/classes.pt")
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model, self.preprocess = clip.load("ViT-B/32", device=self.device)
 
-def is_ragondin(path):
-    img = Image.open(path)
-    img = preprocess(img).unsqueeze(0).to(device)
+        tokens = clip.tokenize(prompts).to(self.device)
 
-    with torch.no_grad():
-        image_features = model.encode_image(img)
-        image_features = image_features / image_features.norm(dim=-1, keepdim=True)
-
-        similarity = image_features @ text_embeddings.T
-        pred = similarity.argmax(dim=-1).item()
-
-    return pred == 0
+        self.text_embeddings = self.model.encode_text(tokens)
+        self.text_embeddings /= self.text_embeddings.norm(dim=-1, keepdim=True)
 
 
-print(is_ragondin("data/ragondin_ex.jpg"))
+    def predict(self, picture):
+        img = picture.img
+        img = self.preprocess(img).unsqueeze(0).to(self.device)
+
+        with torch.no_grad():
+            image_features = self.model.encode_image(img)
+            image_features = image_features / image_features.norm(dim=-1, keepdim=True)
+
+            similarity = image_features @ self.text_embeddings.T
+            pred = similarity.argmax(dim=-1).item()
+
+        return pred == 0

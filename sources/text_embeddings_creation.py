@@ -2,23 +2,11 @@ import clip
 import torch
 from PIL import Image
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model, preprocess = clip.load("ViT-B/32", device=device)
 
-text = [
-    "A nutria",
-    "An animal",
-    "An empty cage",
-    "A cat",
-    "A rabbit",
-    "A dog",
-    "A mouse",
-    "A rat",
-]
+class Prompts:
+    def __init__(self, prompts, model, device):
+        tokens = clip.tokenize(prompts).to(device)
 
-tokens = clip.tokenize(text).to(device)
+        text_features = model.encode_text(tokens)
+        text_features /= text_features.norm(dim=-1, keepdim=True)
 
-text_features = model.encode_text(tokens)
-text_features /= text_features.norm(dim=-1, keepdim=True)
-
-torch.save(text_features, "classes.pt")
