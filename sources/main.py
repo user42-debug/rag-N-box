@@ -12,8 +12,7 @@ text = [
     "A rabbit",
     "A dog",
     "A mouse",
-    "A rat",
-]
+    "A rat",]
 
 capteur = Capteur(4)
 classifier = Classifier()
@@ -28,5 +27,5 @@ while True:
             is_rag = classifier.predict(pic)
     else:
         last = False
-    
+
     time.sleep(2)
