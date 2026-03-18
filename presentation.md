@@ -6,6 +6,5 @@ L'idée initiale était d'adapter une cage à ragondins et d'y ajouter une camé
 
 
 Problèmes rencontrés lors du développement du projet (brouillon) : 
--Problème de connexion du raspberry 
-    Réglé par la magie obscure de la salle de NSI
+-Problème de connexion du raspberry pi, réglé par la magie obscure de la salle de NSI
 -Problème de mémoire
