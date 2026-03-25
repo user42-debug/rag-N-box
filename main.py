@@ -5,6 +5,8 @@ from sources.messages import Message
 import os
 import time
 
+number = "07xxxxxxxx"
+
 text = [
     "A nutria",
     "An animal",
@@ -28,9 +30,9 @@ while True:
             pic = Picture()
             is_rag = classifier.predict(pic)
             if is_rag:
-                message.send_message("0600000000", "ragondin detecté")
+                message.send_message(number, "ragondin detecté")
             else:
-                message.send_message("0600000000", "autre animal detecté")
+                message.send_message(number, "autre animal detecté")
     else:
         last = False
 
