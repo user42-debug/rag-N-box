@@ -9,3 +9,4 @@ class Picture:
 
     def show(self):
         self.img.show()
+

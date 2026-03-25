@@ -11,3 +11,4 @@ class Capteur:
 
     def __bool__(self):
         return not GPIO.input(self.pin)
+

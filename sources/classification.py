@@ -1,28 +1,49 @@
-import clip
-import torch
+import numpy as np
 from PIL import Image
+import tensorflow as tf
 
 class Classifier:
-    def __init__(self, prompts):
+    def __init__(self, model_path, labels):
+        self.labels = labels
 
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.model, self.preprocess = clip.load("ViT-B/32", device=self.device)
+        self.interpreter = tf.lite.Interpreter(model_path=model_path)
+        self.interpreter.allocate_tensors()
 
-        tokens = clip.tokenize(prompts).to(self.device)
+        self.input_details = self.interpreter.get_input_details()
+        self.output_details = self.interpreter.get_output_details()
 
-        self.text_embeddings = self.model.encode_text(tokens)
-        self.text_embeddings /= self.text_embeddings.norm(dim=-1, keepdim=True)
+        self.height = self.input_details[0]['shape'][1]
+        self.width = self.input_details[0]['shape'][2]
 
+    def preprocess(self, img):
+        img = img.resize((self.width, self.height))
+        img = np.array(img).astype(np.float32)
+
+        img = (img / 127.5) - 1.0
+
+        return np.expand_dims(img, axis=0)
 
     def predict(self, picture):
         img = picture.img
-        img = self.preprocess(img).unsqueeze(0).to(self.device)
 
-        with torch.no_grad():
-            image_features = self.model.encode_image(img)
-            image_features = image_features / image_features.norm(dim=-1, keepdim=True)
+        input_data = self.preprocess(img)
 
-            similarity = image_features @ self.text_embeddings.T
-            pred = similarity.argmax(dim=-1).item()
+        self.interpreter.set_tensor(self.input_details[0]['index'], input_data)
+        self.interpreter.invoke()
 
-        return pred == 0
+        output = self.interpreter.get_tensor(self.output_details[0]['index'])[0]
+
+        pred_index = int(np.argmax(output))
+
+        return pred_index == 0
+
+classi = Classifier("data/mobilenet_v1_1.0_224_quant.tflite", [
+    "A nutria",
+    "An animal",
+    "An empty cage",
+    "A cat",
+    "A rabbit",
+    "A dog",
+    "A mouse",
+    "A rat"
+])
