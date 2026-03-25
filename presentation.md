@@ -10,8 +10,7 @@ En cas de capture, la caméra prend une photo de l'intérieur de la cage puis un
 
 Notre équipe, composée de 4 élèves de NSI, est avant tout un groupe d'amis. Malo Tesse, développeur expérimenté, a développé l'IA utilisée dans notre projet. Martin Descombes, s'est quant à lui occupé de la communication sans fil grâce au module GSM. Célian Quillard a participé à la programmation du module GSM et à l'électronique du Raspberry Pi. Enfin, Cassiopée Flamant-Viette a réalisé la partie hardware et l'installation des capteurs et modules (Conception et impression 3D). Nous avons réalisé ce projet au cours d'un mois de travail.
 
-### Problèmes rencontrés lors du développement du projet (brouillon) : 
+## Problèmes rencontrés lors du développement du projet (brouillon) : 
 - Problème de connexion du Raspberry Pi, réglé par la magie obscure de la salle de NSI
 - Problème de mémoire
 - Difficultés pour envoyer des images à l'aide du module GSM
-
