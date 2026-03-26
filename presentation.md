@@ -10,8 +10,16 @@ En cas de capture, la caméra prend une photo de l'intérieur de la cage puis un
 
 Notre équipe, composée de 4 élèves de NSI, est avant tout un groupe d'amis. Malo Tesse, développeur expérimenté, a développé l'IA utilisée dans notre projet. Martin Descombes, s'est quant à lui occupé de la communication sans fil grâce au module GSM. Célian Quillard a participé à la programmation du module GSM et à l'électronique du Raspberry Pi. Enfin, Cassiopée Flamant-Viette a réalisé la partie hardware et l'installation des capteurs et modules (Conception et impression 3D). Nous avons réalisé ce projet au cours d'un mois de travail.
 
-### Problèmes rencontrés lors du développement du projet (brouillon) : 
-- Problème de connexion du Raspberry Pi, réglé par la magie obscure de la salle de NSI
-- Problème de mémoire
-- Difficultés pour envoyer des images à l'aide du module GSM
+## Avancement du projet 
+Nous avons tout d'abord commencé par la mise en place de la caméra et du capteur logique ainsi que la création de leur programme et le début de quelques tests afin de vérifier leur bon fonctionnement. Ensuite, nous avons commencé la partie autour de l'envoi de SMS par le module GSM, cela se fait par l'utilisation de commandes AT, elles permettent d'envoyer un message en rentrant la numéro du téléphone qui doit recevoir le message. C'est au niveau de l'envoi de MMS, donc d'images que certains problèmes sont arrivés, 
 
+## Problèmes rencontrés lors du développement du projet :
+De nombreux problèmes sont survenus lors de la création du projet :
+    - Problème de connexion du Raspberry Pi, réglé car il y avait un problème de cohabitation pour se connecter au WiFi, en effet, le module GSM prennait le dessus sur le raspberry.
+    - Problème de mémoire, réglé en changeant la carte mémoire, passage de 8GB à 32GB.
+    - Difficultés pour envoyer des images à l'aide du module GSM, non réglé actuellement.
+    - Problème avec la caméra, la caméra n'était pas détectée par le raspberry, probème réglé en débranchant et en rebranchant la caméra.
+    - Problème de compatibilité entre le raspberry et l'I.A., non réglé actuellement, la création d'une nouvelle I.A. peut peut-être résoudre le problème.
+
+## Ouveture 
+L'implémentation d'une I.A., compatible avec le raspberry et capable de calculer une probabilité que l'animal capturé soit un ragondin, permetterais de faire gagner encore plus de temps aux trappeurs. Notre projet est une bonne idée mais n'est pas parfait, en effet, il nécessite une carte SIM par cage avec un forfait valable pour l'envoi de SMS, ce qui revient à devoir payer un prix assez conséquent et sûrement au dessus des primes pour les ragondins. Ce projet nous a permis d'en apprendre plus sur les commandes AT et l'envoi de SMS par un module GSM ainsi que sur l'électronique du raspberry.
