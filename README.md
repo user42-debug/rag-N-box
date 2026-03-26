@@ -43,6 +43,9 @@ Des tests de commandes AT (qui permettent l'envoi d'un messaege) ont étés effe
 - Martin DESCOMBES 
 - Cassiopée FLAMANT-VIETTE
 
+# Version 
+La rag-N-box n'a eu qu'une version.
+
 # Licence 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
